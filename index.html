@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC TASK-1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <svg width="100" class="c-slacklogo--color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60"
+                    shape-rendering="geometricPrecision">
+                    <title>Slack</title>
+                    <path
+                        d="m75.663 47.477 2.929-6.846c3.207 2.375 7.39 3.632 11.574 3.632 3.068 0 5.02-1.187 5.02-3.003-.07-5.03-18.477-1.118-18.617-13.764-.07-6.427 5.648-11.387 13.737-11.387 4.81 0 9.622 1.188 13.038 3.913l-2.737 6.992c-3.143-2.021-7.025-3.43-10.72-3.43-2.51 0-4.184 1.187-4.184 2.725.07 4.96 18.618 2.235 18.827 14.322 0 6.567-5.579 11.178-13.528 11.178-5.856 0-11.225-1.397-15.34-4.332m116.629-9.325a8.498 8.498 0 0 1 -7.405 4.33c-4.698 0-8.506-3.816-8.506-8.523s3.808-8.523 8.506-8.523a8.498 8.498 0 0 1 7.405 4.33l8.143-4.52c-3.05-5.451-8.868-9.137-15.548-9.137-9.839 0-17.815 7.991-17.815 17.85 0 9.858 7.976 17.85 17.815 17.85 6.68 0 12.498-3.686 15.548-9.137zm-82.477 12.958h10.18v-49.86h-10.179zm95.761-49.86v49.86h10.18v-14.938l12.063 14.938h13.012l-15.34-17.746 14.224-16.559h-12.454l-11.505 13.767v-29.322zm-54.218 15.557v4.053c-1.673-2.795-5.787-4.751-10.11-4.751-8.925 0-15.967 7.895-15.967 17.815s7.042 17.885 15.967 17.885c4.323 0 8.437-1.956 10.11-4.751v4.052h10.18v-34.303zm0 21.414c-1.464 2.445-4.532 4.26-7.948 4.26-4.699 0-8.507-3.815-8.507-8.522s3.808-8.523 8.507-8.523c3.416 0 6.484 1.886 7.948 4.4z">
+                    </path>
+                    <path
+                        d="m21.902.148c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985h5.974v-5.985a5.98 5.98 0 0 0 -5.974-5.985m0 15.96h-15.929c-3.299 0-5.973 2.68-5.973 5.986 0 3.305 2.674 5.985 5.973 5.985h15.93c3.298 0 5.973-2.68 5.973-5.985 0-3.306-2.675-5.986-5.974-5.986"
+                        fill="#44BEDF"></path>
+                    <path
+                        d="m59.734 22.094c0-3.306-2.675-5.986-5.974-5.986s-5.973 2.68-5.973 5.986v5.985h5.973a5.98 5.98 0 0 0 5.974-5.985m-15.929 0v-15.961a5.98 5.98 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985v15.96c0 3.307 2.674 5.987 5.973 5.987a5.98 5.98 0 0 0 5.974-5.985"
+                        fill="#2EB67D"></path>
+                    <path
+                        d="m37.831 60a5.98 5.98 0 0 0 5.974-5.985 5.98 5.98 0 0 0 -5.974-5.985h-5.973v5.985c0 3.305 2.674 5.985 5.973 5.985m0-15.96h15.93c3.298 0 5.973-2.68 5.973-5.986a5.98 5.98 0 0 0 -5.974-5.985h-15.929c-3.299 0-5.973 2.68-5.973 5.985a5.979 5.979 0 0 0 5.973 5.985"
+                        fill="#ECB22E"></path>
+                    <g>
+                        <path
+                            d="m0 38.054a5.979 5.979 0 0 0 5.973 5.985 5.98 5.98 0 0 0 5.974-5.985v-5.985h-5.974c-3.299 0-5.973 2.68-5.973 5.985m15.929 0v15.96c0 3.306 2.674 5.986 5.973 5.986a5.98 5.98 0 0 0 5.974-5.985v-15.961a5.979 5.979 0 0 0 -5.974-5.985c-3.299 0-5.973 2.68-5.973 5.985"
+                            fill="#E01E5A"></path>
+                    </g>
+                </svg>
+                <div class="nav-lists">
+                    <ul>
+                        <li>Features <img src="./arrow.svg"></img></li>
+                        <li>Solutions <img src="./arrow.svg"></img></li>
+                        <li class="hover-underline">Enterprise</li>
+                        <li>Resources <img src="./arrow.svg"></img></li>
+                        <li class="hover-underline">Pricing</li>
+                    </ul>
+                </div>
+                <div class="nav-buttons">
+                    <img src="./search.svg" alt=""></img>
+                    <p>Sign in</p>
+                    <div class="talk-to-sales">TALK TO SALES</div>
+                    <div class="try-for-free">TRY FOR FREE</div>
+                    <img src="./hamburger.svg" alt="" class="ham-icon"></img>
+                </div>
+            </div>
+    </header>
+    <section class="hero-section">
+        <div class="hero-section-header">
+            <h1>Made for people.</h1>
+            <h2>Built for productivity.</h2>
+            <p>Connect the right people, find anything that you need and automate the rest. That’s work in Slack, your
+                productivity platform.</p>
+            <div class="buttons">
+                <div class="signup">
+                    SIGN UP WITH EMAIL ADDRESS
+                </div>
+                <div class="googlelogin">
+                    <div class="imggoogle">
+                        <img src="./google.svg" alt=""></img>
+                    </div>
+                    <p>SIGN UP WITH GOOGLE</p>
+                </div>
+            </div>
+            <p><span>Slack is free to try</span> for as long as you like</p>
+        </div>
+        <div class="hero-section-video">
+            <video muted autoplay loop src="./hero-section-video.webm"></video>
+        </div>
+    </section>
+    <section class="companies-section">
+        <div class="trusted-companies">
+            <p>TRUSTED BY COMPANIES ALL OVER THE WORLD</p>
+            <div class="list-companies">
+                <img style alt="SEEK" height="35" width="102" loading="lazy" class="lazyload"
+                    data-src="https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-seek.png"
+                    data-srcset="https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-seek.png 1x, https://a.slack-edge.com/ce51938/marketing/img/logos/company/_color/logo-seek@2x.png 2x"
+                    src="https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-seek.png"
+                    srcset="https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-seek.png 1x, https://a.slack-edge.com/ce51938/marketing/img/logos/company/_color/logo-seek@2x.png 2x">
+                <img style alt="Xero" height="35" width="50" loading="lazy" class="lazyload"
+                    data-src="https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-xero.png"
+                    data-srcset="https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-xero.png 1x, https://a.slack-edge.com/ce51938/marketing/img/logos/company/_color/logo-xero@2x.png 2x"
+                    src="https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-xero.png"
+                    srcset="https://a.slack-edge.com/8719b/marketing/img/logos/company/_color/logo-xero.png 1x, https://a.slack-edge.com/ce51938/marketing/img/logos/company/_color/logo-xero@2x.png 2x">
+                <img style alt="REA Group" height="35" width="154" loading="lazy" class="lazyload"
+                    data-src="https://a.slack-edge.com/96f2e65/marketing/img/logos/company/_color/rea.png"
+                    data-srcset="https://a.slack-edge.com/96f2e65/marketing/img/logos/company/_color/rea.png 1x, https://a.slack-edge.com/96f2e65/marketing/img/logos/company/_color/rea@2x.png 2x"
+                    src="https://a.slack-edge.com/96f2e65/marketing/img/logos/company/_color/rea.png"
+                    srcset="https://a.slack-edge.com/96f2e65/marketing/img/logos/company/_color/rea.png 1x, https://a.slack-edge.com/96f2e65/marketing/img/logos/company/_color/rea@2x.png 2x">
+                <img style alt="RMIT Online" height="35" width="118" loading="lazy" class="lazyload"
+                    data-src="https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/rmit.png"
+                    data-srcset="https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/rmit.png 1x, https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/rmit@2x.png 2x"
+                    src="https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/rmit.png"
+                    srcset="https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/rmit.png 1x, https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/rmit@2x.png 2x">
+                <img style alt="IBM" height="35" width="90" loading="lazy" class="lazyload"
+                    data-src="https://a.slack-edge.com/a121d33/marketing/img/digital-hq/logo-ibm.png"
+                    data-srcset="https://a.slack-edge.com/a121d33/marketing/img/digital-hq/logo-ibm.png 1x, https://a.slack-edge.com/a121d33/marketing/img/digital-hq/logo-ibm@2x.png 2x"
+                    src="https://a.slack-edge.com/a121d33/marketing/img/digital-hq/logo-ibm.png"
+                    srcset="https://a.slack-edge.com/a121d33/marketing/img/digital-hq/logo-ibm.png 1x, https://a.slack-edge.com/a121d33/marketing/img/digital-hq/logo-ibm@2x.png 2x">
+                <img style alt="Deliveroo" height="35" width="143" loading="lazy" class="lazyload"
+                    data-src="https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/deliveroo.png"
+                    data-srcset="https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/deliveroo.png 1x, https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/deliveroo@2x.png 2x"
+                    src="https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/deliveroo.png"
+                    srcset="https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/deliveroo.png 1x, https://a.slack-edge.com/f854ec/marketing/img/logos/company/_color/deliveroo@2x.png 2x">
+
+
+            </div>
+            <div class="companies-section1">
+                <div class="companies-section1-video">
+                    <video muted autoplay loop src="./video1.webm"></video>
+                </div>
+                <div class="companies-section1-heading">
+                    <h2>Move faster with your tools in one space</h2>
+                    <p>Automate away routine tasks with the power of generative AI and simplify your workflow with all
+                        your favourite apps ready to go in Slack.</p>
+                    <a href="https://slack.com/intl/en-in/integrations">Learn more about the Slack platform-></a>
+                </div>
+            </div>
+            <div class="companies-section2">
+                <div class="companies-section2-heading">
+                    <h2>Choose how you want to work</h2>
+                    <p>In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You can
+                        easily chat, send audio and video clips, or join a huddle to talk things through live.
+                    </p>
+                    <a href="https://slack.com/intl/en-in/digital-hq">Learn more about flexible communication</a>
+                </div>
+                <div class="companies-section2-video">
+                    <video muted autoplay loop src="./video2.webm"></video>
+                </div>
+            </div>
+
+            <div class="companies-section3">
+                <div class="companies-section3-video">
+                    <video muted autoplay loopp src="./video3.webm"></video>
+                </div>
+                <div class="companies-section3-heading">
+                    <h2>Bring your team together</h2>
+                    <p>At the heart of Slack are channels: organised spaces for everyone and everything that you need
+                        for work. In channels, it’s easier to connect across departments, offices, time zones and even
+                        other companies.</p>
+                    <a href="https://slack.com/intl/en-in/features/channels">Learn more about channels</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="teams-large">
+            <h2>Teams large and small rely on slack</h2>
+            <p>Slack securely scales up to support collaboration at the world’s biggest companies.</p>
+            <div class="teams-button">
+                <div class="meet-slack">MEET SLACK FOR ENTERPRISE</div>
+                <div class="team-talk-to-sales">TALK TO SALES</div>
+            </div>
+        </div>
+        <ul class="stat-container">
+            <li class="stat">
+                <p><span class="stat-percent">85%</span></p>
+                <p class="stat-text">of users say that Slack has improved communication<sup>*</sup></p>
+            </li>
+            <li class="stat">
+                <p><span class="stat-percent">86%</span></p>
+                <p class="stat-text">feel that their ability to work remotely has improved<sup>*</sup></p>
+            </li>
+            <li class="stat">
+                <p><span class="stat-percent">88%</span></p>
+                <p class="stat-text">feel more connected to their teams<sup>*</sup></p>
+            </li>
+        </ul>
+    </section>
+    <section class="section5">
+
+    </section>
+    <section class="section6">
+        <h6 class="section6-heading">Take a deeper dive into a new way to work</h6>
+        <div class="section6-cards">
+         <div class="card1">
+            <a
+                
+                href="https://www.salesforce.com/plus/experience/dreamforce_2023/series/productivity_with_slack_at_dreamforce_2023">
+                <div class="imageContainer">
+                    <img src="./cards/dreameforce.png" alt="">
+                    <div class="card-text">
+                        <p>EVENT</p>
+                        <h5>Ready for the future of AI in Slack?</h5>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p>WATCH ON DEMAND</p>
+                </div>
+            </a>
+         </div>
+         <div class="card2">
+            <a
+                href="https://www.salesforce.com/plus/experience/dreamforce_2023/series/productivity_with_slack_at_dreamforce_2023">
+                <div class="imageContainer">
+                    <img src="./img-2.jpg" alt="">
+                    <div class="card-text">
+                        <p>On Demand</p>
+                        <h5>Big things are launching. Relieve the highlights of World Tour New York!</h5>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p>WATCH NOW</p>
+                </div>
+            </a>
+         </div>  
+         <div class="card3">
+            <a
+                href="https://www.salesforce.com/plus/experience/dreamforce_2023/series/productivity_with_slack_at_dreamforce_2023">
+                <div class="imageContainer">
+                    <img src="./img-3.jpg" alt="">
+                    <div class="card-text">
+                        <p>Customer Story</p>
+                        <h5>How OpenAI expands ChatGPT with slack.</h5>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p>READ MORE</p>
+                </div>
+            </a>
+         </div>
+         <div class="card4">
+            <a
+                href="https://www.salesforce.com/plus/experience/dreamforce_2023/series/productivity_with_slack_at_dreamforce_2023">
+                <div class="imageContainer">
+                    <img src="./img-4.jpg" alt="">
+                    <div class="card-text">
+                        <p>Webinar</p>
+                        <h5>Top Slack tips to boost productivity.</h5>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <p>WATCH NOW</p>
+                </div>
+            </a>
+         </div> 
+        </div>
+    </section>
+    <section class="section7">
+        <div class="section7-content">
+            <h3>See all that you can accomplish with Slack</h3>
+            <div class="section7-buttons">
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-menu"></div>
+        <div class="footer-social">
+            <ul>
+                <li><a href="">Status</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href=""><img src="./privacy.png" alt="">Your privacy choices</a></li>
+                <li><a href="">Cookie preferences</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href=""><img src="./globe.png" alt="">Change region <img style="height: 5px;" src="./down.png" alt=""></a></li>
+            </ul>
+            <a href=""></a>
+            <ul></ul>
+        </div>
+        <div class="footer-legal">
+            <p>©2023 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
+                their respective owners.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
